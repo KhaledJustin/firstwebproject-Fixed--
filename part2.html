@@ -7,7 +7,12 @@
     <style> table, th, td {border: 1px solid black;}</style>
 </head>
 <body>
-    <h1>Gum is 0.75&cent;</h1>
+    <h1>Website practice part 2</h1>
+    <ol>
+        <li href= "index.html">Home Page</li>
+        <li href= "part1.html">Part 1 website</li>
+        <li href= "part2.html">Part 2 website</li>
+    </ol>
     <iframe src="https://i5.walmartimages.ca/images/Enlarge/712/430/6000203712430.jpg" title="Pack of 5 Gum"></iframe>
     <ol>
         <li>Mentos</li>
@@ -41,6 +46,25 @@
             <td>Excel</td>
             <td>Bad</td>
         </tr>
-    </table>
+    </table><br>
+
+    <form action="/action_page.php">
+        <legend>Gum Review</legend>
+        <label for="fname">Name: </label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="gum">Choose your gum:</label>
+        <select name="gum" id="cars">
+            <option value="Mentos">Mentos</option>
+            <option value="5Gum">5Gum</option>
+            <option value="Excel">Excel</option>
+            <option value="Hubba Bobba">Hubba Bobba</option>
+        </select><br>
+        <label for="5Rating">Five Gum:</label>
+        <input type="number" id="Rating" name="rating" min="1" max="5"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <label for="WebsiteReview">Website Review</label><br>
+    <textarea id="Review" name="Website Review" rows="4">Please leave a review just in case that the website needs updates!</textarea>
 </body>    
 </html>
