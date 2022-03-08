@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <title>Part 2 website</title>
-    <style> table, th, td {border: 1px solid black;}</style>
-</head>
-<body>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Website practice part 2</h1>
     <ol>
-        <li href= "index.html">Home Page</li>
-        <li href= "part1.html">Part 1 website</li>
-        <li href= "part2.html">Part 2 website</li>
+      <li href="index.html">Home Page</li>
+      <li href="part1.html">Part 1 website</li>
+      <li href="part2.html">Part 2 website</li>
     </ol>
-    <iframe src="ImAGeS/5GuM.jpg" title="Pack of 5 Gum" width="1210" height="789"></iframe>
+    <iframe
+      src="ImAGeS/5GuM.jpg"
+      title="Pack of 5 Gum"
+      width="1210"
+      height="789"
+    ></iframe>
     <ol>
-        <li>Mentos</li>
-        <li>Normal Gum</li>
-        <li>Fresh Gum</li>
+      <li>Mentos</li>
+      <li>Normal Gum</li>
+      <li>Fresh Gum</li>
     </ol>
 
     <ul>
-        <li>Tic Tacs</li>
-        <li>5 gum</li>
-        <li>Excel</li>
+      <li>Tic Tacs</li>
+      <li>5 gum</li>
+      <li>Excel</li>
     </ul>
 
     <dl>
-        <dt>5 gum</dt>
-        <dd>Best gum</dd>
-        <dt>Excel</dt>
-        <dd>Just plain bad</dd>
+      <dt>5 gum</dt>
+      <dd>Best gum</dd>
+      <dt>Excel</dt>
+      <dd>Just plain bad</dd>
     </dl>
 
     <table>
-        <tr>
-            <th>Gum</th>
-            <th>Rating</th>
-        </tr>
-        <tr>
-            <td>5 Gum</td>
-            <td>Good</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td>Bad</td>
-        </tr>
-    </table><br>
-
+      <tr>
+        <th>Gum</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>5 Gum</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>Excel</td>
+        <td>Bad</td>
+      </tr>
+    </table>
+    <br />
+    <!-- Form to get user input for a gum review -->
     <form action="/action_page.php">
-        <legend>Gum Review</legend>
-        <label for="fname">Name: </label>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="gum">Choose your gum:</label>
-        <select name="gum" id="cars">
-            <option value="Mentos">Mentos</option>
-            <option value="5Gum">5Gum</option>
-            <option value="Excel">Excel</option>
-            <option value="Hubba Bobba">Hubba Bobba</option>
-        </select><br>
-        <label for="5Rating">Five Gum:</label>
-        <input type="number" id="Rating" name="rating" min="1" max="5"><br>
-        <input type="submit" value="Submit">
+      <legend>Gum Review</legend>
+
+      <!-- Used to get your name from a text input -->
+      <label for="fname">Name: </label>
+      <input type="text" id="fname" name="fname" /><br />
+
+      <!-- Used to gather your choice for the gum -->
+      <label for="gum">Choose your gum:</label>
+      <select name="gum" id="gum">
+        <option value="Mentos">Mentos</option>
+        <option value="5Gum">5Gum</option>
+        <option value="Excel">Excel</option>
+        <option value="Hubba Bobba">Hubba Bobba</option></select
+      ><br />
+
+      <!-- Used to rate the five gum out of five -->
+      <label for="Rating">Five Gum:</label>
+      <input type="number" id="Rating" name="rating" min="1" max="5" /><br />
+      <input type="submit" value="Submit" />
     </form>
-    <br>
-    <label for="WebsiteReview">Website Review</label><br>
-    <textarea id="Review" name="Website Review" rows="4">Please leave a review just in case that the website needs updates!</textarea>
-</body>    
+    <br />
+
+    <!-- Made a text area to get any feedback for the website -->
+    <label for="WebsiteReview">Website Review</label><br />
+    <textarea id="Review" name="Website Review" rows="4">
+Please leave a review just in case that the website needs updates!</textarea
+    >
+  </body>
 </html>
